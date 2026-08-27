@@ -1,8 +1,0 @@
-VITE_API_BASE_URL=http://localhost:8000/api/v1
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5432
-POSTGRES_DB=combo_app
-POSTGRES_USER=combo_user
-POSTGRES_PASSWORD=combo_password
-HOST=0.0.0.0
-PORT=8000
