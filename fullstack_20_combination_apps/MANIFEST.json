@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 2,
+  "applicationCount": 20,
+  "applications": [
+    {
+      "folder": "01-react-fastapi-postgres",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "FastAPI",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "POSTGRES",
+      "backendPort": 8000,
+      "healthPath": "/health",
+      "apiPrefix": "/api/v1",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "POSTGRES_HOST",
+        "POSTGRES_PORT",
+        "POSTGRES_DB",
+        "POSTGRES_USER",
+        "POSTGRES_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "02-react-django-postgres",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "Django",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "DB",
+      "backendPort": 8000,
+      "healthPath": "/health",
+      "apiPrefix": "/api",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "DB_HOST",
+        "DB_PORT",
+        "DB_NAME",
+        "DB_USER",
+        "DB_PASSWORD",
+        "HOST",
+        "PORT",
+        "DJANGO_SECRET_KEY",
+        "DJANGO_DEBUG"
+      ]
+    },
+    {
+      "folder": "03-react-flask-postgres",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "Flask",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "PG",
+      "backendPort": 5000,
+      "healthPath": "/healthz",
+      "apiPrefix": "/v1",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "PGHOST",
+        "PGPORT",
+        "PGDATABASE",
+        "PGUSER",
+        "PGPASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "04-react-express-mongodb",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "Express",
+      "database": "MongoDB",
+      "databaseEnvProfile": "MONGO",
+      "backendPort": 4000,
+      "healthPath": "/ready",
+      "apiPrefix": "/api/v1",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MONGO_URI",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "05-react-express-postgres",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "Express",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "URL",
+      "backendPort": 4000,
+      "healthPath": "/health",
+      "apiPrefix": "/api/v2",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "DATABASE_URL",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "06-react-fastapi-mongodb",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "FastAPI",
+      "database": "MongoDB",
+      "databaseEnvProfile": "MONGODB",
+      "backendPort": 8000,
+      "healthPath": "/health",
+      "apiPrefix": "/backend",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MONGODB_URI",
+        "MONGODB_DATABASE",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "07-vue-fastapi-postgres",
+      "tier": "mainstream",
+      "frontend": "Vue",
+      "backend": "FastAPI",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "DB",
+      "backendPort": 8000,
+      "healthPath": "/ready",
+      "apiPrefix": "/api",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "DB_HOST",
+        "DB_PORT",
+        "DB_NAME",
+        "DB_USER",
+        "DB_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "08-vue-django-mysql",
+      "tier": "mainstream",
+      "frontend": "Vue",
+      "backend": "Django",
+      "database": "MySQL",
+      "databaseEnvProfile": "MYSQL",
+      "backendPort": 8000,
+      "healthPath": "/health",
+      "apiPrefix": "/v1",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MYSQL_HOST",
+        "MYSQL_PORT",
+        "MYSQL_DATABASE",
+        "MYSQL_USER",
+        "MYSQL_PASSWORD",
+        "HOST",
+        "PORT",
+        "DJANGO_SECRET_KEY",
+        "DJANGO_DEBUG"
+      ]
+    },
+    {
+      "folder": "09-vue-express-mongodb",
+      "tier": "mainstream",
+      "frontend": "Vue",
+      "backend": "Express",
+      "database": "MongoDB",
+      "databaseEnvProfile": "MONGODB",
+      "backendPort": 4000,
+      "healthPath": "/healthz",
+      "apiPrefix": "/api/v2",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MONGODB_URI",
+        "MONGODB_DATABASE",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "10-vue-flask-postgres",
+      "tier": "mainstream",
+      "frontend": "Vue",
+      "backend": "Flask",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "POSTGRES",
+      "backendPort": 5000,
+      "healthPath": "/health",
+      "apiPrefix": "/service",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "POSTGRES_HOST",
+        "POSTGRES_PORT",
+        "POSTGRES_DB",
+        "POSTGRES_USER",
+        "POSTGRES_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "11-react-nestjs-mongodb",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "NestJS",
+      "database": "MongoDB",
+      "databaseEnvProfile": "MONGO",
+      "backendPort": 3000,
+      "healthPath": "/health",
+      "apiPrefix": "/backend",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MONGO_URI",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "12-react-fastify-mysql",
+      "tier": "mainstream",
+      "frontend": "React",
+      "backend": "Fastify",
+      "database": "MySQL",
+      "databaseEnvProfile": "DB",
+      "backendPort": 3000,
+      "healthPath": "/ready",
+      "apiPrefix": "/api/v1",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "DB_HOST",
+        "DB_PORT",
+        "DB_NAME",
+        "DB_USER",
+        "DB_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "13-vue-fastify-postgres",
+      "tier": "mainstream",
+      "frontend": "Vue",
+      "backend": "Fastify",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "PG",
+      "backendPort": 3000,
+      "healthPath": "/health",
+      "apiPrefix": "/service",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "PGHOST",
+        "PGPORT",
+        "PGDATABASE",
+        "PGUSER",
+        "PGPASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "14-vue-express-mysql",
+      "tier": "mainstream",
+      "frontend": "Vue",
+      "backend": "Express",
+      "database": "MySQL",
+      "databaseEnvProfile": "URL",
+      "backendPort": 4000,
+      "healthPath": "/healthz",
+      "apiPrefix": "/api",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "DATABASE_URL",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "15-svelte-fastapi-mongodb",
+      "tier": "extended",
+      "frontend": "Svelte",
+      "backend": "FastAPI",
+      "database": "MongoDB",
+      "databaseEnvProfile": "MONGO",
+      "backendPort": 8000,
+      "healthPath": "/healthz",
+      "apiPrefix": "/api",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MONGO_URI",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "16-svelte-express-postgres",
+      "tier": "extended",
+      "frontend": "Svelte",
+      "backend": "Express",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "POSTGRES",
+      "backendPort": 4000,
+      "healthPath": "/health",
+      "apiPrefix": "/v1",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "POSTGRES_HOST",
+        "POSTGRES_PORT",
+        "POSTGRES_DB",
+        "POSTGRES_USER",
+        "POSTGRES_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "17-svelte-flask-mysql",
+      "tier": "extended",
+      "frontend": "Svelte",
+      "backend": "Flask",
+      "database": "MySQL",
+      "databaseEnvProfile": "MYSQL",
+      "backendPort": 5000,
+      "healthPath": "/ready",
+      "apiPrefix": "/api/v2",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MYSQL_HOST",
+        "MYSQL_PORT",
+        "MYSQL_DATABASE",
+        "MYSQL_USER",
+        "MYSQL_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "18-nextjs-fastapi-postgres",
+      "tier": "extended",
+      "frontend": "Next.js static",
+      "backend": "FastAPI",
+      "database": "PostgreSQL",
+      "databaseEnvProfile": "URL",
+      "backendPort": 8000,
+      "healthPath": "/health",
+      "apiPrefix": "/api/v1",
+      "publicEnvKey": "NEXT_PUBLIC_API_BASE_URL",
+      "environmentKeys": [
+        "NEXT_PUBLIC_API_BASE_URL",
+        "DATABASE_URL",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "19-nextjs-express-mongodb",
+      "tier": "extended",
+      "frontend": "Next.js static",
+      "backend": "Express",
+      "database": "MongoDB",
+      "databaseEnvProfile": "MONGO",
+      "backendPort": 4000,
+      "healthPath": "/ready",
+      "apiPrefix": "/backend",
+      "publicEnvKey": "NEXT_PUBLIC_API_BASE_URL",
+      "environmentKeys": [
+        "NEXT_PUBLIC_API_BASE_URL",
+        "MONGO_URI",
+        "HOST",
+        "PORT"
+      ]
+    },
+    {
+      "folder": "20-svelte-fastify-mysql",
+      "tier": "extended",
+      "frontend": "Svelte",
+      "backend": "Fastify",
+      "database": "MySQL",
+      "databaseEnvProfile": "MYSQL",
+      "backendPort": 3000,
+      "healthPath": "/health",
+      "apiPrefix": "/service",
+      "publicEnvKey": "VITE_API_BASE_URL",
+      "environmentKeys": [
+        "VITE_API_BASE_URL",
+        "MYSQL_HOST",
+        "MYSQL_PORT",
+        "MYSQL_DATABASE",
+        "MYSQL_USER",
+        "MYSQL_PASSWORD",
+        "HOST",
+        "PORT"
+      ]
+    }
+  ]
+}

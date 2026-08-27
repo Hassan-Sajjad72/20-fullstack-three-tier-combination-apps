@@ -1,0 +1,16 @@
+{
+  "name": "16-svelte-express-postgres-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "vite": "^6.1.0",
+    "svelte": "^5.20.0"
+  }
+}
