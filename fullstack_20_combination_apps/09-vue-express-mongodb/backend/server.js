@@ -1,7 +1,0 @@
-import express from "express";
-    import { MongoClient } from "mongodb";
-async function checkDb() { const c=new MongoClient(process.env.MONGODB_URI,{serverSelectionTimeoutMS:5000}); await c.connect(); await c.db().command({ping:1}); await c.close(); }
-    const app=express();
-    app.get("/healthz", async (_req,res)=>{try{await checkDb();res.json({status:"ok",database:"mongodb"})}catch{res.status(503).json({status:"error"})}});
-    app.get("/api/v2/message", (_req,res)=>res.json({message:"09-vue-express-mongodb is working"}));
-    app.listen(Number(process.env.PORT||4000), process.env.HOST||"0.0.0.0");
