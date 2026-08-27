@@ -1,4 +1,0 @@
-VITE_API_BASE_URL=http://localhost:4000/api
-DATABASE_URL=mysql://combo_user:combo_password@localhost:3306/combo_app
-HOST=0.0.0.0
-PORT=4000
